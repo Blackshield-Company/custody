@@ -31,7 +31,7 @@ Every `intake` and `transfer` appends one JSON line to `.custody/custody.jsonl`:
 Requires a Rust toolchain (1.70+).
 
 ```sh
-git clone https://github.com/synthalorian/custody
+git clone https://github.com/Blackshield-Company/custody
 cd custody
 cargo install --path .
 ```
@@ -74,4 +74,5 @@ as one layer of documentation, not a substitute for procedure.
 
 Apache-2.0. See [LICENSE](LICENSE).
 
-Made by synth with blackclaw
+
+Part of [Blackshield Company](https://github.com/Blackshield-Company).
