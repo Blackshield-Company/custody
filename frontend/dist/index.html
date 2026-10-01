@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark" />
+  <title>Custody</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Custody</h1>
+    <p class="hint path">This aids documentation. It does not guarantee admissibility.</p>
+  </header>
+  <p id="error" class="error" hidden></p>
+  <main>
+    <section class="board">
+      <h2>Case</h2>
+      <form id="open-case">
+        <input id="root" name="root" type="text" placeholder="Case folder path" spellcheck="false" />
+        <button class="btn" type="submit">Open</button>
+      </form>
+      <form id="init-case">
+        <input name="case_id" type="text" placeholder="Case id" spellcheck="false" />
+        <button class="btn" type="submit">Init</button>
+      </form>
+      <p id="case-id" class="path"></p>
+      <h2>Log</h2>
+      <ul id="log" class="cases"></ul>
+    </section>
+    <section class="detail">
+      <form id="intake-form">
+        <h2>Intake</h2>
+        <input name="file" type="text" placeholder="File (relative to case folder)" spellcheck="false" />
+        <input name="custodian" type="text" placeholder="Custodian" spellcheck="false" />
+        <textarea name="notes" placeholder="Notes" rows="2"></textarea>
+        <button class="btn" type="submit">Intake</button>
+      </form>
+      <form id="transfer-form">
+        <h2>Transfer</h2>
+        <input name="file" type="text" placeholder="File (relative to case folder)" spellcheck="false" />
+        <input name="from" type="text" placeholder="From" spellcheck="false" />
+        <input name="to" type="text" placeholder="To" spellcheck="false" />
+        <textarea name="notes" placeholder="Notes" rows="2"></textarea>
+        <button class="btn" type="submit">Transfer</button>
+      </form>
+      <h2>Verify</h2>
+      <button id="verify-btn" class="btn" type="button">Verify</button>
+      <div id="verify-out"></div>
+      <h2>Report</h2>
+      <pre id="report" class="summary"></pre>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

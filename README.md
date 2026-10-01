@@ -70,6 +70,21 @@ followed. Courts weigh chain of custody on testimony, policy, and practice, not 
 single tool. Consult counsel and your jurisdiction's rules of evidence; treat this tool
 as one layer of documentation, not a substitute for procedure.
 
+## Desktop
+
+Same hash-chained log, in a local window. Nothing leaves the machine. Type the case folder. Evidence file names are relative to that folder.
+
+```sh
+cargo build --manifest-path src-tauri/Cargo.toml
+./src-tauri/target/debug/custody-desktop
+```
+
+## Roadmap
+
+- [x] Rust core library + CLI
+- [x] Tauri window (same local log, no network)
+- [ ] Windows and Mac release builds (workflow is in, run it when the suite is finished)
+
 ## License
 
 Apache-2.0. See [LICENSE](LICENSE).

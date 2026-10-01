@@ -251,7 +251,7 @@ fn append_entry(root: &Path, entry: &Entry) -> Result<()> {
 }
 
 /// Result of verifying one file against the log.
-#[derive(Debug)]
+#[derive(Debug, Serialize)]
 pub struct FileVerification {
     pub file: String,
     pub logged_sha256: String,
@@ -261,7 +261,7 @@ pub struct FileVerification {
 }
 
 /// Result of verifying the whole chain + all files.
-#[derive(Debug)]
+#[derive(Debug, Serialize)]
 pub struct Verification {
     pub chain_ok: bool,
     pub chain_errors: Vec<String>,
