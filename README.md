@@ -1,3 +1,5 @@
+![custody](.github/preview.png)
+
 # custody
 
 `custody` is a tamper-evident chain-of-custody log for digital evidence. It keeps an
